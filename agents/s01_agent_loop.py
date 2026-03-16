@@ -38,7 +38,7 @@ client = Anthropic(
         "Content-Type": "application/json",
         "Authorization": f"Bearer {os.getenv('ANTHROPIC_AUTH_TOKEN')}",
     }
-    )
+)
 MODEL = os.environ["MODEL_ID"]
 
 SYSTEM = f"You are a coding agent at {os.getcwd()}. Use bash to solve tasks. Act, don't explain."
